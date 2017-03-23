@@ -71,11 +71,38 @@
 
 <section class="container contact-me clearfix">
   <div class="wrapper">
+    <h1>Contact</h1>
     <div class="column-6">
-      <h2>Contact Me</h2>
+      <h2>Send a Message</h2>
+      <p>Fill out the contact form if you would like a resume, or if you have any other questions.</p>
+      <%= form_for @message, url: {action: "create"}, remote: true, id: "contact-form" do |f| %>
+        <div class="form-field-container">
+          <%= f.label :subject, id: "subject-label" %>
+          <%= f.text_field :subject, id: "subject-field" %>
+        </div>
+        <div class="form-field-container">
+          <%= f.label :name, id: "name-label" %>
+          <%= f.text_field :name, id: "name-field" %>
+        </div>
+        <div class="form-field-container">
+          <%= f.label :email, id: "email-label" %>
+          <%= f.text_field :email, id: "email-field" %>
+        </div>
+        <div class="form-field-container">
+          <%= f.label :message, id: "message-label" %>
+          <%= f.text_area :message, id: "message-field" %>
+        </div>
+        <div>
+          <p id="message-submission-response"></p>
+        </div>
+        <div class="button">
+          <%= f.submit "Submit" %>
+        </div>
+      <% end %>
     </div>
     <div class="column-6">
       <h2>Find Me</h2>
+      <p>Feel free to connect with me on Github, LinkedIn, or on my blog.</p>
     </div>
   </div>
 </section>

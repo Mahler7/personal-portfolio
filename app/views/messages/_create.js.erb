@@ -1,0 +1,9 @@
+var $ = function(id){
+  return document.getElementById(id);
+}
+var message = $('message-submission-response');
+message.innerHTML = "Thank you for submitting a message, I will get back to you shortly.";
+$('subject-field').innerHTML = '';
+$('name-field').innerHTML = '';
+$('email-field').innerHTML = '';
+$('message-field').innerHTML = '';

@@ -1,0 +1,15 @@
+var $ = function(id){
+  return document.getElementById(id);
+}
+var message = $('message-submission-response');
+message.innerHTML = "Thank you for submitting a message, I will get back to you shortly.";
+// $('contact-form').reset();
+var subjectReset = $('subject-field')
+var nameReset = $('name-field')
+var emailReset = $('email-field')
+var messageReset = $('message-field')
+
+subjectReset.value = '';
+nameReset.value = '';
+emailReset.value = '';
+messageReset.value = '';
