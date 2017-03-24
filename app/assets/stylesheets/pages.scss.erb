@@ -59,6 +59,9 @@ MODULAR CSS
 .text-centered {
   text-align: center;
 }
+.block {
+  display: block;
+}
 /***************
 BODY SECTIONS
 ***************/
@@ -173,8 +176,21 @@ BODY SECTIONS
   height: 30px;
   border-radius: 5px;
 }
+.field-container {
+  display: inline-block;
+}
+.contact-label-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.contact-fields {
+  display: inline-block;
+}
 #message-field {
   height: 200px;
+}
+#message-image {
+  vertical-align: top;
 }
 .form-field-container {
   text-align: center;
@@ -182,7 +198,30 @@ BODY SECTIONS
 .form-field-container span {
   color: red;
 }
-
+#links-column {
+  text-align: left;
+  height: 100%;
+  position: relative;
+}
+.contact-links-container {
+  margin-top: 40px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+// .contact-links-container p {
+//   margin: 0;
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+// }
+.find-me-links {
+  font-size: 20px;
+  color: #16488D;
+}
 /***************
 BUTTONS
 ***************/
