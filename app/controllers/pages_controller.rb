@@ -10,7 +10,6 @@ class PagesController < ApplicationController
         format.js {render "create"}
       end
     else
-      render '/'
       respond_to do |format|
         format.html
         format.js {render "messageErrors.js.erb"}

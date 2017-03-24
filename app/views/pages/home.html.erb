@@ -77,20 +77,20 @@
       <p>Fill out the contact form if you would like a resume, or if you have any other questions.</p>
       <%= form_for @message, url: {action: "create"}, remote: true, id: "contact-form" do |f| %>
         <div class="form-field-container">
-          <%= f.label :subject, id: "subject-label" %>
-          <%= f.text_field :subject, id: "subject-field" %>
+          <%= f.label :subject, id: "subject-label" %>&nbsp;<span id="subject-error">&nbsp;*</span>
+          <%= f.text_field :subject, class: "contact-fields", id: "subject-field" %>
         </div>
         <div class="form-field-container">
-          <%= f.label :name, id: "name-label" %>
-          <%= f.text_field :name, id: "name-field" %>
+          <%= f.label :name, id: "name-label" %>&nbsp;<span id="name-error">&nbsp;*</span>
+          <%= f.text_field :name, class: "contact-fields", id: "name-field" %>
         </div>
         <div class="form-field-container">
-          <%= f.label :email, id: "email-label" %>
-          <%= f.text_field :email, id: "email-field" %>
+          <%= f.label :email, id: "email-label" %>&nbsp;<span id="email-error">&nbsp;*</span>
+          <%= f.text_field :email, class: "contact-fields", id: "email-field" %>
         </div>
         <div class="form-field-container">
-          <%= f.label :message, id: "message-label" %>
-          <%= f.text_area :message, id: "message-field" %>
+          <%= f.label :message, id: "message-label" %>&nbsp;<span id="message-error">&nbsp;*</span>
+          <%= f.text_area :message, class: "contact-fields", id: "message-field" %>
         </div>
         <div>
           <p id="message-submission-response"></p>
