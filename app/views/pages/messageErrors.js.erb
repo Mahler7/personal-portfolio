@@ -1,0 +1,41 @@
+var $ = function(id){
+  return document.getElementById(id);
+}
+// var errorMessage = $('message-submission-response');
+var subject = $('subject-field').value;
+var name = $('name-field').value;
+var email = $('email-field').value;
+var message = $('message-field').value;
+
+var subjectError = $('subject-error');
+var nameError = $('name-error');
+var emailError = $('email-error');
+var messageError = $('message-error');
+
+if (subject === ""){
+  subjectError.innerHTML = "Subject is required.";
+}
+else {
+  subjectError.innerHTML = "";
+}
+
+if (name === ""){
+  nameError.innerHTML = "Name is required.";
+}
+else {
+  nameError.innerHTML = "";
+}
+
+if (email === ""){
+  emailError.innerHTML = "Email is required."
+}
+else {
+  emailError.innerHTML = "";
+}
+
+if (message === ""){
+  messageError.innerHTML = "Message is required."
+}
+else {
+  messageError.innerHTML = "";
+}

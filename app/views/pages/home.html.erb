@@ -71,11 +71,64 @@
 
 <section class="container contact-me clearfix">
   <div class="wrapper">
+    <h1>Contact</h1>
     <div class="column-6">
-
+      <h2>Send a Message</h2>
+      <p>Fill out the contact form if you would like a resume, or if you have any other questions.</p>
+      <%= form_for @message, url: {action: "create"}, remote: true, id: "contact-form" do |f| %>
+        <div class="form-field-container">
+          <div class="contact-label-container block">
+            <%= f.label :subject, class: "contact-labels", id: "subject-label" %>&nbsp;<span id="subject-error">&nbsp;*</span>
+          </div>
+          <div class="field-image-container">
+            <img class="image-field" src="<%= image_path 'glyphicon-subject'%>" >
+            <%= f.text_field :subject, class: "contact-fields", id: "subject-field" %>
+          </div>
+        </div>
+        <div class="form-field-container">
+          <div class="contact-label-container block">
+            <%= f.label :name, id: "name-label" %>&nbsp;<span id="name-error">&nbsp;*</span>
+          </div>
+          <div class="field-image-container">
+            <img class="image-field" src="<%= image_path 'glyphicon-name'%>" >
+            <%= f.text_field :name, class: "contact-fields", id: "name-field" %>
+          </div>
+        </div>
+        <div class="form-field-container">
+          <div class="contact-label-container block">
+            <%= f.label :email, id: "email-label" %>&nbsp;<span id="email-error">&nbsp;*</span>
+          </div>
+          <div class="field-image-container">
+            <img class="image-field" src="<%= image_path 'glyphicon-email'%>" >
+            <%= f.text_field :email, class: "contact-fields", id: "email-field" %>
+          </div>
+        </div>
+        <div class="form-field-container">
+          <div class="contact-label-container block">
+            <%= f.label :message, id: "message-label" %>&nbsp;<span id="message-error">&nbsp;*</span>
+          </div>
+          <div class="field-image-container relative">
+            <img class="image-field" id="message-image" src="<%= image_path 'glyphicon-message'%>" >
+            <%= f.text_area :message, class: "contact-fields", id: "message-field" %>
+          </div>
+        </div>
+        <div>
+          <p id="message-submission-response"></p>
+        </div>
+        <div>
+          <%= f.submit "Submit", class: "button contact-submit-button" %>
+        </div>
+      <% end %>
     </div>
-    <div class="column-6">
-
+    <div class="column-6" id="links-column">
+      <h2>Find Me</h2>
+      <p>If you're interested in connecting, feel fre free to reach out to me on Github, LinkedIn, or on my blog.</p>
+      <div class="contact-links-container">
+        <p><span><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></span>&nbsp;<a class="find-me-links" href="https://www.linkedin.com/in/justin-jungst/" target="_blank">LinkedIn</a></p>
+        <p><span><i class="fa fa-github fa-lg" aria-hidden="true"></i></span>&nbsp;<a class="find-me-links" href="https://github.com/Mahler7" target="_blank">Github</a></p>
+       
+        <p><span><i class="fa fa-wordpress fa-lg" aria-hidden="true"></i></span>&nbsp;<a class="find-me-links" href="https://jjprogramming.wordpress.com/" target="_blank">Blog</a></p>
+      </div>
     </div>
   </div>
 </section>
