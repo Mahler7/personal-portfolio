@@ -112,6 +112,10 @@ BODY SECTIONS
 .about-me p { 
   width: 50%;
   line-height: 1.6;
+  margin-bottom: 10px;
+}
+.about-me {
+  margin-bottom: 10px;
 }
 .first-page-break {
   background: url("<%= asset_path 'background-image-binary-3.jpg' %>") no-repeat;
@@ -214,6 +218,55 @@ BODY SECTIONS
 .find-me-links {
   font-size: 20px;
   color: #16488D;
+}
+/***************
+NAVBAR
+***************/
+nav {
+  background-color: #0f0f0f;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+  z-index: 1;
+}
+.primary-nav {
+  float: right;
+  list-style-type: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.primary-nav > li {
+  float: left;
+}
+.primary-nav > li > a {
+  float: left;
+  padding: 20px 0;
+  width: 150px;
+  border-left: 1px solid #fff;
+}
+.primary-nav > li:first-child > a {
+  border-left: none;
+}
+.primary-nav a {
+  color: #fff;
+}
+nav li a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-transition: 0.15s background-color linear;
+  -moz-transition: 0.15s background-color linear;
+  -o-transition: 0.15s background-color linear;
+  transition: 0.15s background-color linear;
+}
+nav li a:focus,
+nav li a:hover,
+nav li a.active {
+  background-color: #fff;
+  color: #16488D; 
 }
 /***************
 BUTTONS
