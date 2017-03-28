@@ -5,6 +5,7 @@ class PagesController < ApplicationController
   def create
     @message = Message.new(message_params)
     if @message.save
+      ContactsMailer.contact_email(@message).deliver_now
       respond_to do |format|
         format.html
         format.js {render "create"}
