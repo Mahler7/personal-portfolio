@@ -285,6 +285,12 @@ nav li a.active {
   background-color: #fff;
   color: #16488D; 
 }
+#mobile-menu-icon {
+  display: none;
+}
+#mobile-menu-icon-close {
+  display: none;
+}
 /***************
 FOOTER
 ***************/
@@ -402,6 +408,66 @@ Media Queries
     margin-right: auto;
     display: block;
     margin-top: 20px;
-    // border-radius: 50%; 
+  }
+
+  .projects {
+    height: 300%;
+  }
+  .column-4 {
+    float: none;
+    margin-top: 10px;
+  }
+  .column-8 {
+    display: none;
+  }
+  .wrapper .column-4 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 800px){
+  // nav {
+  //   position: static;
+  // }
+  #mobile-menu-icon {
+    display: block;
+    height: 100%
+  }
+  #mobile-menu-icon i {
+    float: right;
+    padding: 15px 25px 25px 0;
+  }
+  #mobile-menu-icon-close {
+    display: none;
+    height: 100%;
+  }
+  #mobile-menu-icon-close i {
+    float: right;
+    padding: 15px 25px 25px 0;
+  }
+  nav figure {
+    top: -16px;
+    left: -40px;
+  }
+  #nav-toggle {
+    display: none;
+  }
+  .primary-nav {
+    width: 100%;
+    overflow: hidden;
+    display: none;
+  }
+  .primary-nav li {
+    float: right;
+    width: 100%;
+  }
+  .primary-nav li a {
+    border-left: none;
+    width: 100%;
+    text-align: right;
+    padding: 15px 25px 15px 0;
   }
 }
