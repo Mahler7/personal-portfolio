@@ -1,8 +1,14 @@
 <nav class="clearfix">
   <figure>
-    <img src="<%= image_path 'logo-inverted.png'%>" alt="Justin Jungst">
+    <img  src="<%= image_path 'logo-inverted.png'%>" alt="Justin Jungst"> 
   </figure>
-  <ul class="primary-nav">
+  <div id="mobile-menu-icon">
+    <i class="fa fa-bars fa-inverse fa-3x" aria-hidden="true" onclick="mobileNavDisplay(event)"></i>
+  </div>
+  <div id="mobile-menu-icon-close">
+    <i class="fa fa-window-close fa-inverse fa-3x" aria-hidden="true" onclick="mobileNavClose(event)"></i>
+  </div>
+  <ul class="primary-nav" id="nav-toggle">
     <li><a href="#landing-page">Home</a></li>
     <li><a href="#about-me">About</a></li>
     <li><a href="#projects">Portfolio</a></li>

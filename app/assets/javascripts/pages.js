@@ -65,3 +65,21 @@ importantPeopleInfo = function(event){
     buttonText.innerHTML = "Details";
   }
 }
+mobileNavDisplay = function(event){
+  event.preventDefault();
+  var displayNavIcon = $("mobile-menu-icon");
+  var displayNavClose = $("mobile-menu-icon-close");
+  var displayNav = $("nav-toggle");
+  displayNavIcon.style.display = "none";
+  displayNavClose.style.display = "block";
+  displayNav.style.display = "block";
+}
+mobileNavClose = function(event){
+  event.preventDefault();
+  var displayNavIcon = $("mobile-menu-icon");
+  var displayNavClose = $("mobile-menu-icon-close");
+  var displayNav = $("nav-toggle");
+  displayNavIcon.style.display = "block";
+  displayNavClose.style.display = "none";
+  displayNav.style.display = "none";
+}

@@ -13,6 +13,15 @@ body {
   font-weight: 100;
   font-size: 16px;
 }
+img {
+  max-width: 100%;
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 .big-container {
   width: 100%;
   height: 120%;
@@ -276,6 +285,12 @@ nav li a.active {
   background-color: #fff;
   color: #16488D; 
 }
+#mobile-menu-icon {
+  display: none;
+}
+#mobile-menu-icon-close {
+  display: none;
+}
 /***************
 FOOTER
 ***************/
@@ -347,4 +362,145 @@ COLUMNS
 .column-info {
   margin-left: 10%;
   margin-right: 10%;
+}
+/***************
+Media Queries
+***************/
+@media screen and (max-width: 1278px){
+  .about-me p { 
+    width: 100%;
+    line-height: 1.6;
+  }
+}
+@media screen and (max-width: 1000px){
+  .container {
+    height: 140%;
+  }
+  .contact-me .column-6 {
+    float: none;
+  }
+  #form-column {
+    width: 100%;
+    text-align: center;
+  }
+  #links-column {
+    margin-left: auto;
+    margin-right: auto;
+    height: 40%;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 900px){
+  .about-me {
+    height: 100%;
+  }
+  .column-6 {
+    float: none;
+  }
+  .about-me .column-6 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  .about-me img {
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 20px;
+  }
+  .about-me p {
+    width: 90%;
+  }
+  .projects {
+    height: 300%;
+  }
+  .column-4 {
+    float: none;
+    margin-top: 10px;
+  }
+  .column-8 {
+    display: none;
+  }
+  .wrapper .column-4 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 800px){
+  // nav {
+  //   position: static;
+  // }
+  #mobile-menu-icon {
+    display: block;
+    height: 100%
+  }
+  #mobile-menu-icon i {
+    float: right;
+    padding: 15px 25px 25px 0;
+  }
+  #mobile-menu-icon-close {
+    display: none;
+    height: 100%;
+  }
+  #mobile-menu-icon-close i {
+    float: right;
+    padding: 15px 25px 25px 0;
+  }
+  nav figure {
+    top: -16px;
+    left: -40px;
+  }
+  #nav-toggle {
+    display: none;
+  }
+  .primary-nav {
+    width: 100%;
+    overflow: hidden;
+    display: none;
+  }
+  .primary-nav li {
+    float: right;
+    width: 100%;
+  }
+  .primary-nav li a {
+    border-left: none;
+    width: 100%;
+    text-align: right;
+    padding: 15px 25px 15px 0;
+  }
+  .projects {
+    height: 260%;
+  }
+}
+@media screen and (max-width: 700px){
+  .landing-page-interior h1 {
+    width: 90%;
+  }
+  .landing-page-interior h2 {
+    width: 80%;
+  }
+  .about-me {
+    height: 125%;
+  }
+  .projects {
+    height: 240%;
+  }
+}
+@media screen and (max-width: 600px){
+  .contact-me {
+    height: 180%;
+  }
+  .projects {
+    height: 220%;
+  }
+}
+@media screen and (max-width: 500px){
+  .projects {
+    height: 200%;
+  }
 }
