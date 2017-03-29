@@ -249,6 +249,7 @@ nav figure {
   left: -40px;
 }
 .primary-nav {
+  display: block;
   float: right;
   list-style-type: none;
   margin-top: 0px;
@@ -343,7 +344,7 @@ COLUMNS
   margin-top: 20px;
   margin-bottom: 20px;
   float: left;
-  width: 66.66%;
+  width: 67%;
 }
 .column-6 {
   margin-top: 10px;
@@ -458,10 +459,14 @@ Media Queries
   #nav-toggle {
     display: none;
   }
+  nav ul {
+    margin: 0;
+  }
   .primary-nav {
     width: 100%;
     overflow: hidden;
     display: none;
+    padding: 0;
   }
   .primary-nav li {
     float: right;
