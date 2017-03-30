@@ -30,11 +30,6 @@ html {
   width: 100%;
   height: 100%;
 }
-// .column-container {
-//   width: 100%;
-//   height: 90%;
-//   margin-bottom: -50px;
-// }
 .container-half {
   width: 100%;
   height: 50%;
@@ -116,7 +111,6 @@ BODY SECTIONS
   margin-right: auto;
   display: block;
   margin-top: 20px;
-  // border-radius: 50%; 
 }
 .about-me p { 
   width: 50%;
@@ -382,12 +376,19 @@ Media Queries
   .container {
     height: 140%;
   }
+  #form-column p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #links-column p {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .contact-me .column-6 {
     float: none;
   }
   #form-column {
     width: 100%;
-    text-align: center;
   }
   #links-column {
     margin-left: auto;
@@ -418,6 +419,8 @@ Media Queries
   }
   .about-me p {
     width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .projects {
     height: 300%;
@@ -429,6 +432,10 @@ Media Queries
   .column-8 {
     display: none;
   }
+  .wrapper {
+    width: 90%;
+    height: 90%;
+  }
   .wrapper .column-4 {
     width: 100%;
     margin-left: auto;
@@ -436,11 +443,11 @@ Media Queries
     display: block;
     text-align: center;
   }
+  .column-4 p {
+    width: 100%
+  }
 }
 @media screen and (max-width: 800px){
-  // nav {
-  //   position: static;
-  // }
   #mobile-menu-icon {
     display: block;
     height: 100%
@@ -484,7 +491,7 @@ Media Queries
     padding: 15px 25px 15px 0;
   }
   .projects {
-    height: 260%;
+    height: 240%;
   }
 }
 @media screen and (max-width: 700px){
@@ -498,7 +505,7 @@ Media Queries
     height: 125%;
   }
   .projects {
-    height: 240%;
+    height: 220%;
   }
 }
 @media screen and (max-width: 600px){
@@ -506,11 +513,11 @@ Media Queries
     height: 180%;
   }
   .projects {
-    height: 220%;
+    height: 270%;
   }
 }
 @media screen and (max-width: 500px){
-  .projects {
-    height: 200%;
-  }
+  // .projects {
+  //   height: 220%;
+  // }
 }
