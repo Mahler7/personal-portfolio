@@ -3,7 +3,7 @@ class ContactsMailer < ApplicationMailer
 
   def contact_email(message)
     @message = message
-    mail( :to => 'theonetrueemailtest@gmail.com',
+    mail( :to => 'jjungstprogramming@gmail.com',
     :subject => 'Personal Contact Info Filled Out' )
   end
 end
