@@ -28,39 +28,51 @@
 <section class="big-container projects clearfix" id="projects">
   <div class="wrapper">
     <h1>Portfolio</h1>
-    <div class="column-4">
-      <h3>Actualize</h3>
-      <img id="actualize-image" src="<%= image_path 'anyone-can-learn-to-code.jpg'%>" >
-      <a href="#" class="button" id="actualize-button" onclick="actualizeInfo(event)">Details</a>
-      <div class="text-left column-info" id="actualize-info" >
-        <p>Actualize is a coding bootcamp and apprenticeship program that teaches people to code without having to quit their day jobs. I was hired to work on internal web development projects and to maintain their website. Technologies used include Rails, HTML/CSS, Vue.js, and PostgreSQL.</p>
+    <div class="three-column-grid">
+      <div class="column-4">
+        <h3>Ambition in Motion</h3>
+        <img id="ambition-in-motion-image" src="<%= image_path 'ambition-in-motion-home-hero.png'%>" >
+        <a href="#" class="button" id="ambition-in-motion-button" onclick="ambitionInMotionInfo(event)">Details</a>
+        <div class="text-left column-info" id="ambition-in-motion-info" >
+          <p>Ambition in Motion is a mentorship platform that uses the most up-to-date research and technology on mentorship to provide the best possible solution to universities seeking a great way to engage their students and alumni. I was hired to build templates for their front end. Technologies used include Django, HTML/CSS, and JavaScript.</p>
+        </div>
+      </div>
+      <div class="column-4">
+        <h3>Actualize</h3>
+        <img id="actualize-image" src="<%= image_path 'anyone-can-learn-to-code.jpg'%>" >
+        <a href="#" class="button" id="actualize-button" onclick="actualizeInfo(event)">Details</a>
+        <div class="text-left column-info" id="actualize-info" >
+          <p>Actualize is a coding bootcamp and apprenticeship program that teaches people to code without having to quit their day jobs. I was hired to work on internal web development projects and to maintain their website. Technologies used include Rails, HTML/CSS, Vue.js, and PostgreSQL.</p>
+        </div>
+      </div>
+      <div class="column-4">
+        <h3>Just A Break</h3>
+        <img id="just-a-break-image" src="<%= image_path 'just-a-break.jpg'%>" >
+        <a href="#" class="button" id="just-a-break-button" onclick="justABreakInfo(event)">Details</a>
+        <div class="text-left column-info" id="just-a-break-info" >
+          <p>Built a volunteer management application with a small team for the non-profit organization Just A Break. The app allows businesses to donate gifts to cancer facilities, which in turn distribute gifts to cancer patients. It allows users to keep track of what businesses have been contacted and what gifts are available for facilities to distribute. Technologies used include Rails, HTML/CSS, AngularJS, and PostgreSQL.</p>
+        </div>
       </div>
     </div>
-    <div class="column-4">
-      <h3>Just A Break</h3>
-      <img id="just-a-break-image" src="<%= image_path 'just-a-break.jpg'%>" >
-      <a href="#" class="button" id="just-a-break-button" onclick="justABreakInfo(event)">Details</a>
-      <div class="text-left column-info" id="just-a-break-info" >
-        <p>Built a volunteer management application with a small team for the non-profit organization Just A Break. The app allows businesses to donate gifts to cancer facilities, which in turn distribute gifts to cancer patients. It allows users to keep track of what businesses have been contacted and what gifts are available for facilities to distribute. Technologies used include Rails, HTML/CSS, AngularJS, and PostgreSQL.</p>
+    <div class="three-colum-grid">
+      <div class="column-4" style="margin-left: 0px">
+        <h3>John Marshall Law</h3>
+        <img id="john-marshall-law-image" src="<%= image_path 'john-marshall-law.jpg'%>" >
+        <a href="#" class="button" id="john-marshall-law-button" onclick="johnMarshallLawInfo(event)">Details</a>
+        <div class="text-left column-info" id="john-marshall-law-info" >
+          <p>I worked with a small team to help John Marshall Law School develop an app that determines if an abused victim qualifies for tax relief. We built an app that presents visitors with tax-related questions. Based on the visitors’ responses, the app automatically displays more questions or a link to an IRS form or FAQs that help the victim determine which steps to take next. We also created an admin panel that allows John Marshall Law School to edit the questions, change the order in which they appear, and edit the FAQs. Technologies used include Rails, PostgreSQL, HTML, CSS, and AngularJS.</p>
+        </div>
       </div>
-    </div>
-    <div class="column-4">
-      <h3>John Marshall Law</h3>
-      <img id="john-marshall-law-image" src="<%= image_path 'john-marshall-law.jpg'%>" >
-      <a href="#" class="button" id="john-marshall-law-button" onclick="johnMarshallLawInfo(event)">Details</a>
-      <div class="text-left column-info" id="john-marshall-law-info" >
-        <p>I worked with a small team to help John Marshall Law School develop an app that determines if an abused victim qualifies for tax relief. We built an app that presents visitors with tax-related questions. Based on the visitors’ responses, the app automatically displays more questions or a link to an IRS form or FAQs that help the victim determine which steps to take next. We also created an admin panel that allows John Marshall Law School to edit the questions, change the order in which they appear, and edit the FAQs. Technologies used include Rails, PostgreSQL, HTML, CSS, and AngularJS.</p>
+      <div class="column-4">
+        <h3>Important People</h3>
+        <img id="important-people-image" src="<%= image_path 'important-people.jpg'%>" >
+        <a href="#" class="button" id="important-people-button" onclick="importantPeopleInfo(event)">Details</a>
+        <div class="text-left column-info" id="important-people-info">
+          <p>Important People is a web app that allows a user to keep track of events, gift ideas, and send messages to important people in advance via text or email.Technologies used: Rails, MySQL, HTML/CSS, and Javascript.</p>
+        </div>
       </div>
-    </div>
-    <div class="column-8">
-      
-    </div>
-    <div class="column-4">
-      <h3>Important People</h3>
-      <img id="important-people-image" src="<%= image_path 'important-people.jpg'%>" >
-      <a href="#" class="button" id="important-people-button" onclick="importantPeopleInfo(event)">Details</a>
-      <div class="text-left column-info" id="important-people-info">
-        <p>Important People is a web app that allows a user to keep track of events, gift ideas, and send messages to important people in advance via text or email.Technologies used: Rails, MySQL, HTML/CSS, and Javascript.</p>
+      <div class="column-4">
+
       </div>
     </div>
   </div>
@@ -117,7 +129,7 @@
           <p id="message-submission-response"></p>
         </div>
         <div>
-          <%= f.submit "Submit", class: "button contact-submit-button" %>
+          <%= f.submit "Svubmit", class: "button contact-submit-button" %>
         </div>
       <% end %>
     </div>

@@ -1,6 +1,23 @@
 var $ = function(id){
   return document.getElementById(id);
 }
+
+ambitionInMotionInfo = function(event){
+  event.preventDefault();
+  var displayBlock = $("ambition-in-motion-info");
+  var displayImage = $("ambition-in-motion-image");
+  var buttonText = $("ambition-in-motion-button");
+  if (displayBlock.style.display !== "block"){
+    displayBlock.style.display = "block";
+    displayImage.style.display = "none";
+    buttonText.innerHTML = "Hide";
+  }
+  else if (displayBlock.style.display !== "none") {
+    displayBlock.style.display = "none";
+    displayImage.style.display = "block";
+    buttonText.innerHTML = "Details";
+  }
+}
 actualizeInfo = function(event){
   event.preventDefault();
   var displayBlock = $("actualize-info");

@@ -22,9 +22,20 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+// .wrapper {
+//     position: relative;
+//     width: 100%;
+//     padding-bottom: 30%;
+// }
+// .wrapper .content {
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+// }
 .big-container {
+  position: relative;
   width: 100%;
-  height: 120%;
+  padding-bottom: 10%;
 }
 .container {
   width: 100%;
@@ -35,9 +46,11 @@ html {
   height: 50%;
 }
 .wrapper {
-  width: 80%;
-  height: 80%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
+  overflow: auto;
 }
 
 .clearfix:before,
@@ -149,6 +162,12 @@ BODY SECTIONS
 }
 #just-a-break-image {
   display: block;
+}
+#ambition-in-motion-image {
+  display: block;
+}
+#ambition-in-motion-info {
+  display: none;
 }
 #actualize-info {
   display: none;
@@ -339,6 +358,10 @@ BUTTONS
 /***************
 COLUMNS
 ***************/
+.three-column-grid {
+  float: left;
+}
+
 .column-8 {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -358,6 +381,12 @@ COLUMNS
 }
 .column-4:first-child {
   margin-left: 0px;
+}
+.column-4-empty {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  float: left;
+  width: 34%;
 }
 .column-info {
   margin-left: 10%;
@@ -508,14 +537,14 @@ Media Queries
     height: 220%;
   }
 }
-@media screen and (max-width: 600px){
-  .contact-me {
-    height: 180%;
-  }
-  .projects {
-    height: 270%;
-  }
-}
+// @media screen and (max-width: 600px){
+//   .contact-me {
+//     height: 180%;
+//   }
+//   .projects {
+//     height: 330%;
+//   }
+// }
 @media screen and (max-width: 500px){
   // .projects {
   //   height: 220%;
